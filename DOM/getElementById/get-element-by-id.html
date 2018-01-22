@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      // Every code writen here is run before the html in page be loaded
+    </script>
+  </head>
+  <body>
+
+    <div id="nacional">Dubai</div>
+    <div id="internacional">São Paulo</div>
+    <div id="notext">Your Text</div>
+
+    <script type="text/javascript">
+      // the code writen here is run after the html loaded
+      var element = document.getElementById("nacional");
+      var element2 = document.getElementById("internacional");
+      var element3 = document.getElementById("notext");
+      element3.innerHTML = "My Personal Text";
+
+      console.log(element.innerHTML);
+      console.log(element2.innerHTML);
+      console.log(element3.innerHTML);
+    </script>
+
+    <!--
+    This example is used to import an external javascript file
+    you car run this after or before the html load, just change the local where you put
+    the file.
+    -->
+    <script src="your path here"></script>
+  </body>
+</html>

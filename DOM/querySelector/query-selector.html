@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>querySelector</title>
+  </head>
+  <body>
+
+    <div id="div-id">Div com Id</div>
+    <div class="div-class">Div com Class</div>
+    <p>Teste3</p>
+    <p class="paragrafo">Teste4</p>
+
+    <script type="text/javascript">
+      //Para acessar os elementos com query selector voce usa a mesma sitaxe de escrita do CSS
+
+      //Pega o elemento com id
+      console.log(
+        document.querySelector("#div-id")
+      );
+
+      // Pega o elemento pelo nome da classe
+      console.log(
+        document.querySelector(".div-class")
+      );
+
+      console.log(
+        // Pega o elemento somente pelo nome da classe
+        document.querySelector("p")
+      );
+
+      //Pega o elemento pela tag e pela class (sem espaços)
+      console.log(
+        document.querySelector("p.paragrafo")
+      );
+
+
+      // diferente do getElement o querySelector não retorna um collection
+      // mas sim o primeiro elemento que encotrar no html.
+
+      // O get element e o querySelector possuem velocidades diferentes na hora de acessar
+      // os elementos, portanto e recomendavel que voce leve isso em consideração na hora de projetar
+      // a sua aplicação.
+      //
+      // para projetos pequenos isso pode não causar muito impacto mas em projetos maiores pode fazer uma
+      // diferença consideravel
+    </script>
+  </body>
+</html>

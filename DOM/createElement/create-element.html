@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>createElement</title>
+  </head>
+  <body>
+
+
+    <script type="text/javascript">
+      // Create element é uma propriedade do DOM que permite você criar elementos caso eles
+      // não existam.
+
+      // Sintaxe:
+      // document.createElement(<Tag HTML a Customizar>);
+
+      var img = document.createElement("img");
+      img.src="http://lorempixel.com/400/200/sports/";
+
+      var p = document.createElement("p");
+      p.innerHTML = "Texto da tag customizada";
+      console.log(
+        img,p.innerHTML
+      );
+    </script>
+  </body>
+</html>

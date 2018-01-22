@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>parentNode</title>
+  </head>
+  <body>
+
+    <div id="linux">
+      <div class="ubuntu">
+        Ubuntu
+        <div class="elementaryos">Elementary OS</div>
+      </div>
+
+      <div class="debian">Debian</div>
+    </div>
+
+    <script type="text/javascript">
+      // A propriadade paretNode do DOM permite a você acessar o elemento pai de um
+      // outro elemento que você acessou.
+
+      console.log(
+        // Acessando o pai da classe elementaryos
+        document.querySelector(".elementaryos").parentNode
+      );
+
+      console.log(
+        // Acessando o pai de Ubuntu
+        document.querySelector(".elementaryos").parentNode.parentNode
+      );
+    </script>
+  </body>
+</html>

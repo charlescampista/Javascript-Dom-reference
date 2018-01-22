@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>removeChild</title>
+  </head>
+  <body>
+
+    <div id="nissan">
+      <div class="remover">Remover Esta Div</div>
+    </div>
+
+    <script type="text/javascript">
+      //Ao contrario do appendChild o removeChild como o nome ja diz remove um elemento
+      // de uma tag
+
+      var versa = document.createElement("p");
+      versa.innerHTML = "Versa";
+
+      var sentra = document.createElement("h1");
+      sentra.innerHTML = "Sentra";
+
+      document.getElementById("nissan").appendChild(versa);
+      document.getElementById("nissan").appendChild(sentra);
+
+      document.getElementById("nissan").removeChild(versa);
+
+    </script>
+  </body>
+</html>

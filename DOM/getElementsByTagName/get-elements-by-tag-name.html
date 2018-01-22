@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>getElementsByTagName</title>
+  </head>
+  <body>
+
+    <br>
+    <form class="" action="index.html" method="post"></form>
+    <button type="button" name="button">The first button</button>
+    <button type="button" name="button">The second button</button>
+    <div>Div 1</div>
+    <div>Div 2</div>
+    <div>Div 3</div>
+    <div>Div 4</div>
+    <div>Div 5</div>
+    <div>Div 6</div>
+    <div>Esta e a ultima div</div>
+
+    <script type="text/javascript">
+      // cuidado para não colocar ponto e virgula dentro do console
+      console.log(
+        // Acessa todas as tags br do html
+        document.getElementsByTagName("br")
+      );
+
+      console.log(
+        // Acessa todos os formularios do documeno
+        document.getElementsByTagName("form")
+      );
+
+      console.log(
+        // Acessa o primeiro botão do html
+        document.getElementsByTagName("button")[0]
+      );
+
+      console.log(
+        // Acessa a quinta div do html
+        document.getElementsByTagName("div")[4]
+      );
+
+      console.log(
+        // imprime o conteudo da 7 div
+        document.getElementsByTagName("div")[6].innerHTML
+      );
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>querySelectorAll</title>
+  </head>
+  <body>
+    <div class="teste">Div1</div>
+    <div class="teste">Div2</div>
+    <div class="teste">Div3</div>
+
+    <div id="pai">
+      <div class="filho">Filho 1</div>
+      <div class="filho">Filho 2</div>
+      <div class="filho">Filho 3</div>
+    </div>
+
+    <p>Oi</p>
+    <p>Olá</p>
+
+
+
+
+
+  <script type="text/javascript">
+    // Diferente do querySelector que acessa apenas o  primeiro elemento encontrado
+    // o querySelectorAll cria um load list que contem todos os elementos encotrados
+    // referente ao item que voce pesquisou
+
+    console.log(
+      // Retorna todas as classes teste
+      document.querySelectorAll(".teste")
+    );
+
+    console.log(
+      // Acessa todos os elementos filho da classe pai
+
+      // primeiramente voce precisa acessar a classe pai, logo após voce deve buscar todos os filhos
+      // a partir da classe pai que voce acessou
+
+      document.getElementById("pai").querySelectorAll(".filho")
+
+    );
+
+
+  </script>
+  </body>
+</html>

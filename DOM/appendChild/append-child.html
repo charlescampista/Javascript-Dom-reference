@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>appendChild</title>
+  </head>
+  <body>
+
+    <div id="nissan">
+
+    </div>
+
+    <script type="text/javascript">
+      // Essa tag possibilita você inserir um elemento dentro do outro
+      var versa = document.createElement("p");
+      versa.innerHTML = "Versa";
+
+      var sentra = document.createElement("h1");
+      sentra.innerHTML = "Sentra";
+
+      // Como Funciona:
+      // 1 - você acessa o elemento que ira receber a tag.
+      // 2 - depois você usa o appendChild para incluir o elemento que você precisa.
+
+      document.getElementById("nissan").appendChild(versa);
+      document.getElementById("nissan").appendChild(sentra);
+    </script>
+  </body>
+</html>
